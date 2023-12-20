@@ -1,6 +1,8 @@
-
-
 --- Code selects Company, City, and Country from Northwind dataset
-SELECT Customers.companyname as Company, Customers.city, Customers.country from Customers
-WHERE City IS NOT NULL AND COUNTRY IS NOT NULL --- Pulls only data that contains a City and Country
-ORDER BY Country ASC; --- Orders the Countries from A-Z
+
+SELECT Customers.companyname as Company
+, Customers.city
+, Customers.country
+FROM Customers
+WHERE City IS NOT NULL AND COUNTRY IS NOT NULL
+ORDER BY Country ASC; 
